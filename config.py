@@ -7,5 +7,5 @@ yoloData = os.path.join(pwd,"darknet","cfg","voc.data")
 
 
 # darknet score 的阈值
-DETECT_THRESHOLD = 0
+DETECT_THRESHOLD = 0.5
 
