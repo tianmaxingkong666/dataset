@@ -12,7 +12,7 @@ for i in range(len(sub_files)):
     # class_name = sub_files[0].split("_")[-1].split(".txt")[0]
     rec, prec, ap = voc_eval('results/{}.txt',
                              'VOCdevkit/VOC2012/Annotations/{}.xml',
-                             'VOCdevkit/VOC2012/ImageSets/Main/test.txt',
+                             'VOCdevkit/VOC2012/ImageSets/Main/val.txt',
                              class_name, '.')
     print("{} :\t {} ".format(class_name, ap))
     mAP.append(ap)
